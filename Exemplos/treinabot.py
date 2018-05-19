@@ -1,18 +1,13 @@
-"""
-Operações de adição em dicionário de forma genérica
-
-:param dict: objeto no qual o dado vai ser adicionado
-:param chave: chave para o novo valor a ser adicionado
-:param valor: valor referente a chave adicionada
-
-:return: dicionário com o novo par adicionado
-"""
-def add_cmd(comandos, palavra_chave, comando):
-    comandos[palavra_chave] = comando
-    return comando
-
-
 def add_frase_especifica(frases, palavra_chave, nova_frase):
+    """
+    Operações de adição em dicionário de forma genérica
+
+    :param dict: objeto no qual o dado vai ser adicionado
+    :param chave: chave para o novo valor a ser adicionado
+    :param valor: valor referente a chave adicionada
+
+    :return: dicionário com o novo par adicionado
+    """
     frases[palavra_chave] = nova_frase
     return frases
 

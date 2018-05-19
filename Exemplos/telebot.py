@@ -15,7 +15,7 @@ frases = {
     'zueira': 'Você acha que é zueiro? Não me conheço'
 }
 comandos = {
-    'add_cmd': 'Agora tem um comando novo'
+    'me_surpreenda': 'HAUSHdUAHDUHDUSAHDUHASUD, me obrigue!'
 }
 
 def processa_mensagem(mensagem):
@@ -29,12 +29,9 @@ def processa_mensagem(mensagem):
 
 
 def processa_comando(mensagem):
-    if 'add_cmd' in mensagem:
-        try:
-            mensagem = mensagem.split()
-            comandos = add_cmd(comandos, mensagem[1], mensagem[2])
-        except:
-            resposta = 'Vish!\nPor algum motivo deu errado.\nTenta de novo'
+    if 'me_surpreenda' in mensagem:
+        resposta = comandos['me_surpreenda']
+    return resposta
         
 
 def manipula_mensagem(objeto_mensagem):
