@@ -13,6 +13,7 @@ def add_nome(nome):
 
 
 def add_nomes(nomes):
+    nomes = nomes.split()
     nomes.extend(nomes)
 
 
